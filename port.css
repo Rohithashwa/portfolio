@@ -1,15 +1,18 @@
 *{
     padding: 0px;
     margin: 0px;
+    
 }
-
+body{
+    background-color: rgb(243, 238, 238);
+}
 .res-cont{
     width: 70%;
     border: 2px solid black;
     display: flex;
     border-radius: 20px;
-    background-color: black;
-    color: aliceblue;
+    background-color:aqua;
+    color:black;
     margin-left: 235px;
     margin-right: 200px;
     margin-top: 110px;
@@ -89,5 +92,5 @@
 }
 
 .text span{
-    color: violet;
+    color: rgb(39, 48, 222);
 }
