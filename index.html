@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio webpage</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/99c008a1ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
@@ -16,7 +17,10 @@
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Portfolio</a></li>
+                    <i class="fas fa-times"></i>
                 </ul>
+                <i class="fas fa-bars"></i>
+
             </nav>
             <div class="headcon">
                 <p>JAVA FULL STACK DEVELOPER</p>
@@ -39,8 +43,8 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius amet blanditiis aspernatur sint, sit officiis tempore repellat quo! Dolor, nam maxime voluptatum consequatur vel quo accusamus illo corporis, placeat harum natus velit quasi hic? Nihil veritatis architecto deserunt, quibusdam, voluptates et sint autem, ab illum natus deleniti quaerat nisi.
                     </p>
                     <div class="tabs">
-                        <p class="tab active">Skills</p>
-                        <p class="tab">Education</p>
+                        <p class="tab active" onclick="opentab('skills')">Skills</p>
+                        <p class="tab" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-con active" id="skills">
                         <ul>
@@ -51,7 +55,7 @@
                             <li><span>CSS:3</span><br>Good at designing a basics Webpages</li>
                         </ul>
                     </div>
-                    <div class="tab-con">
+                    <div class="tab-con"  id="education">
                         <ul>
                             <li><span>JAVA</span><br>Good at Core JAVA</li>
                             <li><span>SQL</span><br>Profiecent on Writing Queries</li>
@@ -67,5 +71,82 @@
         </div>
 
     </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+           <h1 class="sub-title">My Work</h1>
+           <div class="work-list">
+                <div class="work">
+                    <img src="project1.png" alt="loading...">
+                    <div class="layer">
+                        <h3>Attendance Management System</h3>
+                        <p>Developed a web application to manage student attendance using JavaScript and MySQL.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="project2.png" alt="loading...">
+                    <div class="layer">
+                        <h3>Music Player</h3>
+                        <p>Developed a music player application using HTML, CSS, and JavaScript.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="project3.png" alt="loading...">
+                    <div class="layer">
+                        <h3>Project 3</h3>
+                        <p>Description for Project 3.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+           </div>
+           <a href="#" class="btn">See All Projects</a>
+
+        </div>
+
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Get in Touch</h2>
+                    <p><i class="fas fa-envelope"></i> rohangangodi@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 6360550195</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-linkedin"></i></a>  
+                        <a href=""><i class="fab fa-github"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+                <a href="" download="Rohithashwa_CV.pdf" class="btn btn2">Download CV</a>
+
+            </div>
+        </div>
+
+    </div>
+
+    <Script>
+
+        var tablinks = document.getElementsByClassName("tab");
+        var tabcons = document.getElementsByClassName("tab-con");
+
+        function opentab(tabname){
+            for(tab of tablinks){
+                tab.classList.remove("active");
+            }
+            for(tab of tabcons){
+                tab.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </Script>
+
 </body>
 </html>
