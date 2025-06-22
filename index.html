@@ -3,112 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio webpage</title>
+    <title>Rohithashwa | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/99c008a1ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- Header -->
     <div class="header">
         <div class="con">
             <nav>
-                <img src="logo.png" class="logo" alt="loading....">
+                <img src="logo.png" class="logo" alt="Logo">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Portfolio</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <i class="fas fa-times"></i>
                 </ul>
                 <i class="fas fa-bars"></i>
-
             </nav>
+
             <div class="headcon">
                 <p>JAVA FULL STACK DEVELOPER</p>
-                <h1>Hi, I'm <span>Rohithashwa R</span> </h1>
+                <h1>Hi, I'm <span>Rohithashwa R</span></h1>
             </div>
         </div>
     </div>
 
+    <!-- About -->
     <div id="about">
         <div class="con">
             <div class="row">
                 <div class="aboutCol1">
-                    <img src="My_pic.png" alt="">
+                    <img src="My_pic.png" alt="Profile picture">
                 </div>
                 <div class="aboutCol2">
-                    <h1>
-                        About Me
-                    </h1>
+                    <h1>About Me</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eius amet blanditiis aspernatur sint, sit officiis tempore repellat quo! Dolor, nam maxime voluptatum consequatur vel quo accusamus illo corporis, placeat harum natus velit quasi hic? Nihil veritatis architecto deserunt, quibusdam, voluptates et sint autem, ab illum natus deleniti quaerat nisi.
+                        I'm a passionate Java Full Stack Developer with skills in building responsive, scalable, and performant web applications using modern technologies. I enjoy solving problems, learning new tools, and working on impactful projects.
                     </p>
+
                     <div class="tabs">
-                        <p class="tab active" onclick="opentab('skills')">Skills</p>
-                        <p class="tab" onclick="opentab('education')">Education</p>
+                        <p class="tab active" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab" onclick="opentab('education', event)">Education</p>
                     </div>
-                    <div class="tab-con active" id="skills">
+
+                    <div class="tab-con active-tab" id="skills">
                         <ul>
-                            <li><span>JAVA</span><br>Good at Core JAVA</li>
-                            <li><span>SQL</span><br>Profiecent on Writing Queries</li>
-                            <li><span>JavaScript</span><br>Good Knoweledge on NodeJS</li>
-                            <li><span>HTML:5</span><br>Profiecent in HTML </li>
-                            <li><span>CSS:3</span><br>Good at designing a basics Webpages</li>
-                        </ul>
-                    </div>
-                    <div class="tab-con"  id="education">
-                        <ul>
-                            <li><span>JAVA</span><br>Good at Core JAVA</li>
-                            <li><span>SQL</span><br>Profiecent on Writing Queries</li>
-                            <li><span>JavaScript</span><br>Good Knoweledge on NodeJS</li>
-                            <li><span>HTML:5</span><br>Profiecent in HTML </li>
-                            <li><span>CSS:3</span><br>Good at designing a basics Webpages</li>
+                            <li><span>Java</span><br>Proficient in Core Java</li>
+                            <li><span>SQL</span><br>Proficient in writing queries and relational databases</li>
+                            <li><span>JavaScript</span><br>Strong knowledge of Node.js</li>
+                            <li><span>HTML5</span><br>Proficient in HTML for building web structure</li>
+                            <li><span>CSS3</span><br>Skilled at designing clean UI with CSS</li>
                         </ul>
                     </div>
 
+                    <div class="tab-con" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology</span><br>Computer Science - XYZ University</li>
+                            <li><span>Full Stack Certification</span><br>Java Full Stack Developer Course</li>
+                        </ul>
+                    </div>
                 </div>
-                
             </div>
         </div>
-
     </div>
 
-
+    <!-- Portfolio -->
     <div id="portfolio">
         <div class="container">
-           <h1 class="sub-title">My Work</h1>
-           <div class="work-list">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
                 <div class="work">
-                    <img src="project1.png" alt="loading...">
+                    <img src="work-1.png" alt="Attendance System">
                     <div class="layer">
                         <h3>Attendance Management System</h3>
-                        <p>Developed a web application to manage student attendance using JavaScript and MySQL.</p>
+                        <p>Developed a web app to manage student attendance using JavaScript and MySQL.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="project2.png" alt="loading...">
+                    <img src="work-2.png" alt="Music Player">
                     <div class="layer">
                         <h3>Music Player</h3>
-                        <p>Developed a music player application using HTML, CSS, and JavaScript.</p>
+                        <p>Created a music player using HTML, CSS, and JavaScript with playlist support.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="project3.png" alt="loading...">
+                    <img src="work-3.png" alt="Project 3">
                     <div class="layer">
                         <h3>Project 3</h3>
-                        <p>Description for Project 3.</p>
+                        <p>Placeholder for future project description.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-           </div>
-           <a href="#" class="btn">See All Projects</a>
-
+            </div>
+            <a href="#" class="btn">See All Projects</a>
         </div>
-
     </div>
 
-
+    <!-- Contact -->
     <div id="contact">
         <div class="container">
             <div class="row">
@@ -117,36 +113,41 @@
                     <p><i class="fas fa-envelope"></i> rohangangodi@gmail.com</p>
                     <p><i class="fas fa-phone"></i> +91 6360550195</p>
                     <div class="social-icons">
-                        <a href=""><i class="fab fa-linkedin"></i></a>  
-                        <a href=""><i class="fab fa-github"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <a href="" download="Rohithashwa_CV.pdf" class="btn btn2">Download CV</a>
-
+                <a href="Rohithashwa_CV.pdf" download class="btn btn2">Download CV</a>
             </div>
         </div>
-
     </div>
 
-    <Script>
+    <!-- Script -->
+    <script>
+        // Tabs Functionality
+        function opentab(tabname, event) {
+            let tablinks = document.getElementsByClassName("tab");
+            let tabcontents = document.getElementsByClassName("tab-con");
 
-        var tablinks = document.getElementsByClassName("tab");
-        var tabcons = document.getElementsByClassName("tab-con");
-
-        function opentab(tabname){
-            for(tab of tablinks){
+            for (let tab of tablinks) {
                 tab.classList.remove("active");
             }
-            for(tab of tabcons){
-                tab.classList.remove("active-tab");
+            for (let content of tabcontents) {
+                content.classList.remove("active-tab");
             }
+
             event.currentTarget.classList.add("active");
             document.getElementById(tabname).classList.add("active-tab");
         }
 
-    </Script>
+        const navLinks = document.querySelector("nav ul");
+        const openBtn = document.querySelector(".fa-bars");
+        const closeBtn = document.querySelector(".fa-times");
+
+        openBtn.onclick = () => navLinks.classList.add("show-nav");
+        closeBtn.onclick = () => navLinks.classList.remove("show-nav");
+    </script>
 
 </body>
 </html>
